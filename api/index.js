@@ -187,5 +187,11 @@ app.get('/spotify/devices', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.json({ status: 'API is running' });
+});
+
 // 6. Export for Vercel serverless
 module.exports = serverless(app);
+
+ 
