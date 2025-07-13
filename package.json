@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-     "serve":"node index.js"
+    "serve": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "axios": "^1.6.7",
+    "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
-    "axios": "^1.6.7",
     "querystring": "^0.2.1",
-    "cors": "^2.8.5"
+    "serverless-http": "^3.2.0"
   }
 }

@@ -4,6 +4,7 @@ const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
 const querystring = require('querystring');
+const serverless = require('serverless-http');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -187,4 +188,4 @@ app.get('/spotify/devices', async (req, res) => {
 });
 
 // 6. Export for Vercel serverless
-module.exports = app; 
+module.exports = serverless(app);
