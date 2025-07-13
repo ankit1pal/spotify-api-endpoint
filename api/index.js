@@ -191,6 +191,10 @@ app.get('/', (req, res) => {
   res.json({ status: 'API is running' });
 });
 
+app.get('/ping', (req, res) => {
+  res.json({ pong: true });
+});
+
 // 6. Export for Vercel serverless
 module.exports = serverless(app);
 
